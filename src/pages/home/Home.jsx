@@ -3,20 +3,16 @@ import Feed from "../../components/feed/Feed";
 import Rightbar from "../../components/rightbar/Rightbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Topbar from "../../components/topbar/Topbar";
+import "./home.css";
 
-export default function Profile() {
+export default function Home() {
 	return (
 		<>
 			<Topbar />
-			<div className="profile">
+			<div className="homeContainer">
 				<Sidebar />
-				<div className="profileRight">
-					<div className="profileRightTop">profile</div>
-					<div className="profileRightBottom">
-						<Feed />
-						<Rightbar />
-					</div>
-				</div>
+				<Feed />
+				<Rightbar />
 			</div>
 		</>
 	);
