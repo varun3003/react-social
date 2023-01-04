@@ -50,28 +50,64 @@ export default function Rightbar({ profile }) {
 				<h4 className="rightbarProfileTitle">User friends</h4>
 				<div className="rightbarFollowings">
 					<div className="rightbarFollowing">
-						<img src="/assets/person/1.jpeg" alt="" className="rightbarFollowingImg" />
-						<span className="rightbarFollowingName">Reddy Anna</span>
+						<img
+							src="/assets/person/1.jpeg"
+							alt=""
+							className="rightbarFollowingImg"
+						/>
+						<span className="rightbarFollowingName">
+							Reddy Anna
+						</span>
 					</div>
 					<div className="rightbarFollowing">
-						<img src="/assets/person/2.jpeg" alt="" className="rightbarFollowingImg" />
-						<span className="rightbarFollowingName">Reddy Anna</span>
+						<img
+							src="/assets/person/2.jpeg"
+							alt=""
+							className="rightbarFollowingImg"
+						/>
+						<span className="rightbarFollowingName">
+							Reddy Anna
+						</span>
 					</div>
 					<div className="rightbarFollowing">
-						<img src="/assets/person/3.jpeg" alt="" className="rightbarFollowingImg" />
-						<span className="rightbarFollowingName">Reddy Anna</span>
+						<img
+							src="/assets/person/3.jpeg"
+							alt=""
+							className="rightbarFollowingImg"
+						/>
+						<span className="rightbarFollowingName">
+							Reddy Anna
+						</span>
 					</div>
 					<div className="rightbarFollowing">
-						<img src="/assets/person/4.jpeg" alt="" className="rightbarFollowingImg" />
-						<span className="rightbarFollowingName">Reddy Anna</span>
+						<img
+							src="/assets/person/4.jpeg"
+							alt=""
+							className="rightbarFollowingImg"
+						/>
+						<span className="rightbarFollowingName">
+							Reddy Anna
+						</span>
 					</div>
 					<div className="rightbarFollowing">
-						<img src="/assets/person/5.jpeg" alt="" className="rightbarFollowingImg" />
-						<span className="rightbarFollowingName">Reddy Anna</span>
+						<img
+							src="/assets/person/5.jpeg"
+							alt=""
+							className="rightbarFollowingImg"
+						/>
+						<span className="rightbarFollowingName">
+							Reddy Anna
+						</span>
 					</div>
 					<div className="rightbarFollowing">
-						<img src="/assets/person/6.jpeg" alt="" className="rightbarFollowingImg" />
-						<span className="rightbarFollowingName">Reddy Anna</span>
+						<img
+							src="/assets/person/6.jpeg"
+							alt=""
+							className="rightbarFollowingImg"
+						/>
+						<span className="rightbarFollowingName">
+							Reddy Anna
+						</span>
 					</div>
 				</div>
 			</>
@@ -82,7 +118,7 @@ export default function Rightbar({ profile }) {
 		<>
 			<div className="rightbar">
 				<div className="rightbarWrapper">
-					<ProfileRightbar/>
+					{profile ? <ProfileRightbar/> : <HomeRightbar/>}
 				</div>
 			</div>
 		</>
